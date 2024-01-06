@@ -45,7 +45,7 @@ h4 {
 p {
   font-size: 1rem;
   color: rgb(214, 214, 214);
-  line-height: 2.5rem;
+  line-height: 1.7rem;
 }
 
 body {
@@ -242,7 +242,7 @@ nav > .logo > img {
 }
 
 .portfolio > .cards > .individualCard > .cardPic {
-  height: 30pc;
+  height: 100%;
   width: 100%;
 }
 
@@ -261,7 +261,7 @@ nav > .logo > img {
   align-items: start;
   flex-wrap: wrap;
   padding: 2pc;
-  gap: 2pc;
+  gap: 1pc;
 }
 
 .experience {
