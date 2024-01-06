@@ -87,6 +87,7 @@ nav > .logo > img {
   height: 60px;
   object-fit: scale-down;
   padding: 5px;
+  cursor: pointer;
 }
 
 .webnav {
