@@ -141,7 +141,9 @@ nav > .links {
   margin-top: 5pc;
   gap: 1pc;
   color: white;
-  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5pc;
 }
 
 .hero > .heroTXT > * {
@@ -378,7 +380,45 @@ footer {
     align-items: center;
     background-color: #292929;
     gap: 2pc;
-    margin-top: 5pc;
+    margin-top: 2pc;
+  }
+
+  h1 {
+    font-size: 3pc;
+    letter-spacing: -2px;
+    color: white;
+    width: fit-content;
+    background-color: #ff7700;
+  }
+
+  h2 {
+    font-size: 2.5pc;
+    color: #ffffff;
+  }
+
+  h3 {
+    font-size: 2pc;
+    color: #ff7700;
+    transition: 0.2s;
+  }
+
+  h3:hover {
+    font-size: 2pc;
+    color: white;
+    transition: 0.2s;
+    background-color: #ff7700;
+    animation: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  h4 {
+    font-size: 1pc;
+    color: #ff7700;
+  }
+
+  p {
+    font-size: 1pc;
+    color: rgb(214, 214, 214);
+    line-height: 1.7rem;
   }
 
   .navBG {
@@ -402,7 +442,7 @@ footer {
     width: 100%;
     height: 100%;
     color: white;
-    padding: 1pc;
+    padding: 2pc;
   }
 
   nav > .logo > img {
@@ -440,20 +480,23 @@ footer {
 
   .hero {
     width: 100%;
-    padding: 1pc;
+    padding: 2pc;
     background-image: url(assets/pics/tile.gif);
     object-fit: cover;
   }
 
   .hero > .heroTXT {
-    gap: 1pc;
+    gap: 0pc;
     color: white;
     text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
   }
 
   .hero > .heroTXT > * {
     color: white;
-    text-align: start;
   }
 
   .about {
@@ -464,7 +507,7 @@ footer {
     width: 100%;
     max-width: 1200px;
     height: fit-content;
-    padding: 1pc;
+    padding: 2pc;
     gap: 2pc;
   }
 
@@ -505,6 +548,8 @@ footer {
 
   .about > .content > .mypic > img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 20px;
     filter: grayscale();
     transition: 0.5s;
@@ -522,7 +567,7 @@ footer {
     align-items: start;
     width: 100%;
     height: fit-content;
-    padding: 1pc;
+    padding: 2pc;
   }
 
   .portfolio > .cards {
@@ -599,7 +644,7 @@ footer {
     align-items: start;
     width: 100%;
     height: fit-content;
-    padding: 1pc;
+    padding: 2pc;
     gap: 2pc;
   }
 
@@ -619,8 +664,8 @@ footer {
     align-items: start;
     color: white;
     width: 100%;
-    gap: 1pc;
-    padding: 1pc;
+    gap: 2pc;
+    padding: 2pc;
   }
 
   .socials {
@@ -628,7 +673,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3pc;
+    gap: 1.5pc;
     color: white;
   }
 
