@@ -15,33 +15,39 @@
     <div class="navBG">
       <nav>
         <div class="logo">
-          <a href="https://cipherrave.github.io"></a
-          ><img src="assets/logo/logo.svg" alt="" />
+          <a href="https://cipherrave.github.io"></a>
+          <img src="assets/logo/logo.svg" alt="" />
         </div>
-        <div class="webnav">
-          <a href="index.html#about" style="all: unset"><p>About</p></a>
-          <a href="index.html#portfolio" style="all: unset"><p>Portfolio</p></a>
-          <a href="index.html#contact" style="all: unset"><p>Contact</p></a>
-        </div>
-        <div class="socials">
-          <a href="mailto:arif_akmal@hotmail.com"
-            ><i class="bi bi-envelope"></i
-          ></a>
-          <a href="https://github.com/cipherrave"
-            ><i class="bi bi-github"></i
-          ></a>
-          <a href="https://www.instagram.com/cipherrave/"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a href="https://linkedin.com/in/arifakmal"
-            ><i class="bi bi-linkedin"></i
-          ></a>
+        <div class="links">
+          <div class="webnav">
+            <a href="index.html#about" style="all: unset"><p>About</p></a>
+            <a href="index.html#portfolio" style="all: unset"
+              ><p>Portfolio</p></a
+            >
+            <a href="index.html#contact" style="all: unset"><p>Contact</p></a>
+          </div>
+          <div class="socials">
+            <a href="mailto:arif_akmal@hotmail.com"
+              ><i class="bi bi-envelope"></i
+            ></a>
+            <a href="https://github.com/cipherrave"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="https://www.instagram.com/cipherrave/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://linkedin.com/in/arifakmal"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
         </div>
       </nav>
     </div>
     <div class="hero" id="hero">
       <div class="heroTXT">
-        <p class="txtBIG" style="color: #ff7700">Hi, My name is</p>
+        <p class="txtBIG" style="color: #ff7700; line-height: 3pc">
+          Hi, My name is
+        </p>
         <h1>'Arif Akmal.</h1>
         <h2>Developer. Designer.</h2>
         <p>
@@ -309,7 +315,7 @@
           </div>
         </div>
         <h4 style="text-align: end; width: 100%">See more projects</h4>
-        <p style="text-align: end; width: 100%; line-height: 0.5rem">
+        <p style="text-align: end; width: 100%; line-height: 1px">
           (coming soon)
         </p>
       </div>
@@ -326,12 +332,14 @@
           action="/action_page.php"
           style="display: flex; flex-direction: column; gap: 2pc"
         >
-          <label for="fname"><p>First Name</p></label>
+          <label for="fname"
+            ><p><b>First Name</b></p></label
+          >
           <input
             type="text"
             id="fname"
             name="firstname"
-            placeholder="Your name.."
+            placeholder="Your name"
             style="
               all: unset;
               border-bottom: white solid 1px;
@@ -339,12 +347,14 @@
               color: white;
             "
           />
-          <label for="lname"><p>Last Name</p></label>
+          <label for="lname"
+            ><p><b>Last Name</b></p></label
+          >
           <input
             type="text"
             id="lname"
             name="lastname"
-            placeholder="Your last name.."
+            placeholder="Your last name"
             style="
               all: unset;
               border-bottom: white solid 1px;
@@ -352,14 +362,17 @@
               color: white;
             "
           />
-          <label for="subject"><p>Subject</p></label>
+          <label for="subject"
+            ><p><b>Message</b></p></label
+          >
           <textarea
             id="subject"
             name="subject"
-            placeholder="Write something.."
+            placeholder="Got something on your mind?"
             style="
               all: unset;
               background-color: white;
+              color: #292929;
               padding: 1pc 1pc;
               border-radius: 10px;
               resize: vertical;
@@ -375,8 +388,9 @@
               background-color: #ff7700;
               border-radius: 10px;
               text-align: center;
-              color: black;
+              color: #292929;
               font-weight: 600;
+              cursor: pointer;
             "
           />
         </form>

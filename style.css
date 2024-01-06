@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 * {
@@ -74,9 +73,10 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
+  max-width: 1210px;
   height: 100%;
   color: white;
   padding: 5pc;
@@ -88,6 +88,14 @@ nav > .logo > img {
   object-fit: scale-down;
   padding: 5px;
   cursor: pointer;
+}
+
+nav > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2pc;
 }
 
 .webnav {
@@ -331,6 +339,7 @@ footer {
 .socials > a:hover {
   color: #ff7700;
   transition-duration: 0.2s;
+  padding-bottom: #f77000 solid 5px;
 }
 
 .goTop {
@@ -396,8 +405,8 @@ footer {
   }
 
   nav > .logo > img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     object-fit: scale-down;
     padding: 0;
   }
@@ -436,7 +445,6 @@ footer {
   }
 
   .hero > .heroTXT {
-    margin-top: 1pc;
     gap: 1pc;
     color: white;
     text-align: start;
@@ -452,11 +460,11 @@ footer {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     height: fit-content;
-    padding: 1px;
-    gap: 1pc;
+    padding: 1pc;
+    gap: 2pc;
   }
 
   .about > .content {
@@ -522,7 +530,7 @@ footer {
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
-    gap: 1pc;
+    gap: 2pc;
     width: 100%;
   }
 
@@ -619,7 +627,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1pc;
+    gap: 3pc;
     color: white;
   }
 
@@ -627,6 +635,7 @@ footer {
     cursor: pointer;
     color: white;
     transition-duration: 0.2s;
+    font-size: 2pc;
   }
 
   .socials > a:hover {
