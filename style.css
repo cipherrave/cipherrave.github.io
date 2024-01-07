@@ -796,4 +796,15 @@ footer {
   body {
     margin-top: 5pc;
   }
+
+  .contact > .cardGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact > .cardGroup > .contactCard {
+    width: 100%;
+  }
 }
