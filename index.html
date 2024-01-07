@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- Nav bar section. -->
     <div class="navBG">
       <nav>
         <div class="logo">
@@ -43,6 +44,7 @@
         </div>
       </nav>
     </div>
+    <!-- Hero section-->
     <div class="hero" id="hero">
       <div class="heroTXT">
         <p class="txtBIG" style="color: #ff7700">Hi, my name is</p>
@@ -54,6 +56,7 @@
         </p>
       </div>
     </div>
+    <!-- About me section -->
     <div class="about" id="about">
       <h3>About Me.</h3>
       <div class="content">
@@ -218,6 +221,7 @@
         </div>
       </div>
     </div>
+    <!-- Portfolio section -->
     <div class="portfolio" id="portfolio">
       <h3>Some Things I've Built.</h3>
       <br /><br />
@@ -305,82 +309,45 @@
         </p>
       </div>
     </div>
+    <!-- Contact section -->
     <div class="contact" id="contact">
       <h3>Let's Connect.</h3>
       <p>
         Have any idea for a project or just want to chat, feel free to contact
         me! 😊
       </p>
-      <div class="contactForm" style="width: 100%">
-        <form
-          class="form"
-          action="/action_page.php"
-          style="display: flex; flex-direction: column; gap: 2pc"
+      <div class="cardGroup">
+        <div
+          class="contactCard"
+          onclick="window.open('mailto:arif_akmal@hotmail.com','mywindow')"
         >
-          <label for="fname"
-            ><p><b>First Name</b></p></label
-          >
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name"
-            style="
-              all: unset;
-              border-bottom: white solid 1px;
-              padding: 0 0 1pc 0;
-              color: white;
-            "
-          />
-          <label for="lname"
-            ><p><b>Last Name</b></p></label
-          >
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name"
-            style="
-              all: unset;
-              border-bottom: white solid 1px;
-              padding: 0 0 1pc 0;
-              color: white;
-            "
-          />
-          <label for="subject"
-            ><p><b>Message</b></p></label
-          >
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Got something on your mind?"
-            style="
-              all: unset;
-              background-color: white;
-              color: #292929;
-              padding: 1pc 1pc;
-              border-radius: 10px;
-              resize: vertical;
-            "
-          ></textarea>
-          <input
-            type="submit"
-            value="Submit"
-            style="
-              all: unset;
-              width: 200px;
-              height: 4pc;
-              background-color: #ff7700;
-              border-radius: 10px;
-              text-align: center;
-              color: #292929;
-              font-weight: 600;
-              cursor: pointer;
-            "
-          />
-        </form>
+          <i class="bi bi-envelope"></i>
+          <p>Email</p>
+        </div>
+        <div
+          class="contactCard"
+          onclick="window.open('https://github.com/cipherrave','mywindow')"
+        >
+          <i class="bi bi-github"></i>
+          <p>GitHub</p>
+        </div>
+        <div
+          class="contactCard"
+          onclick="window.open('https://www.instagram.com/cipherrave/','mywindow')"
+        >
+          <i class="bi bi-instagram"></i>
+          <p>Instagram</p>
+        </div>
+        <div
+          class="contactCard"
+          onclick="window.open('https://linkedin.com/in/arifakmal','mywindow')"
+        >
+          <i class="bi bi-linkedin"></i>
+          <p>LinkedIn</p>
+        </div>
       </div>
     </div>
+    <!-- Footer section -->
     <div class="footerBG">
       <footer>
         <div>

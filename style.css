@@ -124,6 +124,28 @@ nav > .links {
   transition: 0.5s;
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1pc;
+  color: white;
+  font-size: 1.5pc;
+}
+
+.socials > a {
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.socials > a:hover {
+  color: #ff7700;
+  transition-duration: 0.2s;
+  padding-bottom: #f77000 solid 5px;
+}
+
 .links > svg {
   cursor: pointer;
 }
@@ -292,13 +314,54 @@ nav > .links {
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   width: 90%;
   max-width: 1200px;
   height: fit-content;
-  padding: 1pc 5pc 1pc 5pc;
   gap: 2pc;
+  padding: 5pc;
+}
+
+.contact > .cardGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1pc;
+}
+
+.contact > .cardGroup > .contactCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+  width: 10pc;
+  height: 10pc;
+  padding: 2pc;
+  background-color: #414040;
+  gap: 1pc;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.contact > .cardGroup > .contactCard:hover {
+  background-color: #f77000;
+  transition-duration: 0.2s;
+  box-shadow: 20px 20px 60px #4949492f, -20px -20px 60px #4949492f;
+}
+
+.contact > .cardGroup > .contactCard > i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 2pc;
+  color: white;
 }
 
 .footerBG {
@@ -321,28 +384,6 @@ footer {
 
   gap: 2pc;
   padding: 2pc 5pc 2pc 5pc;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1pc;
-  color: white;
-  font-size: 1.5pc;
-}
-
-.socials > a {
-  cursor: pointer;
-  color: white;
-  transition-duration: 0.2s;
-}
-
-.socials > a:hover {
-  color: #ff7700;
-  transition-duration: 0.2s;
-  padding-bottom: #f77000 solid 5px;
 }
 
 .goTop {
@@ -372,6 +413,7 @@ footer {
   }
 }
 
+/* Tablets and Phones */
 @media only screen and (max-width: 970px) {
   body {
     display: flex;
@@ -472,6 +514,27 @@ footer {
     color: white;
     font-weight: 500;
     transition: 0.5s;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5pc;
+    color: white;
+  }
+
+  .socials > a {
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.2s;
+    font-size: 2pc;
+  }
+
+  .socials > a:hover {
+    color: #ff7700;
+    transition-duration: 0.2s;
   }
 
   .links > svg {
@@ -648,6 +711,17 @@ footer {
     gap: 2pc;
   }
 
+  .contact > .cardGroup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact > .cardGroup > .contactCard {
+    width: 45%;
+    height: 45%;
+  }
+
   .footerBG {
     width: 100%;
     height: fit-content;
@@ -666,27 +740,6 @@ footer {
     width: 100%;
     gap: 2pc;
     padding: 2pc;
-  }
-
-  .socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5pc;
-    color: white;
-  }
-
-  .socials > a {
-    cursor: pointer;
-    color: white;
-    transition-duration: 0.2s;
-    font-size: 2pc;
-  }
-
-  .socials > a:hover {
-    color: #ff7700;
-    transition-duration: 0.2s;
   }
 
   .goTop {
@@ -714,5 +767,33 @@ footer {
     p {
       display: flex;
     }
+  }
+}
+
+/* Galaxy Fold lol */
+@media only screen and (max-width: 330px) {
+  .navBG {
+    height: 10pc;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 2pc;
+    gap: 1.5pc;
+  }
+
+  .socials {
+    justify-content: space-evenly;
+    gap: 1.8pc;
+  }
+
+  body {
+    margin-top: 5pc;
   }
 }
